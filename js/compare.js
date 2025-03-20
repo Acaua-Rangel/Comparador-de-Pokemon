@@ -32,7 +32,7 @@ class Poke {
         this.checkboxItem.value = index; // Guardar o índice do carro
 
         // Adiciona o evento de clique ao checkbox
-        this.checkboxItem.onclick = (event) => this.SetCarToCompare(index, event);
+        this.checkboxItem.onclick = (event) => this.SetPokeToCompare(index, event);
 
         this.infoDiv = document.createElement("div");
 
@@ -54,7 +54,7 @@ class Poke {
         this.lista.appendChild(this.objetoLista);
     }
 
-    SetCarToCompare(index, event) {
+    SetPokeToCompare(index, event) {
         if (this.selectedPokes.includes(index)) {
             // Se o carro já estiver na lista, removê-lo
             this.selectedPokes = this.selectedPokes.filter(pokeIndex => pokeIndex !== index);
