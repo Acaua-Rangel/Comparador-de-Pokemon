@@ -11,10 +11,10 @@ class Poke {
 
         this.dialog = document.getElementById("compare");
         this.compareBtn = document.getElementById("compare_btn");
-        this.closeBtn = document.getElementById("close_compare");
+        this.closeBtn = document.getElementById("close_compare"); //Selecionando Objeto
 
         this.compareBtn.onclick = () => this.ShowCompare();
-        this.closeBtn.onclick = () => this.dialog.close();
+        this.closeBtn.onclick = () => this.dialog.close(); // Atribuindo função ao Objeto
     }
 
     createItem(item, index) {
