@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparador de Pokemón</title>    
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/comparador.css" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <ul class="pokemodels">
+        </ul>
+
+        <div style="text-align: center;padding-bottom: 20px;">
+            <button id="compare_btn" type="button" style="height: 40px; width: 200px;">Comparar Pokemóns</button>
+        </div> 
+        <dialog id="compare">
+            <div class="scroll-container">
+                <table>
+                    <tbody>
+                    <tr >
+                        <td>&nbsp;</td>
+                        <td><img id="imagem_0" src="" alt=""></td>
+                        <td><img id="imagem_1" src="" alt=""></td>
+                    </tr>
+                    <tr >
+                        <td>Nome</td>
+                        <td id="nome_0"></td>
+                        <td id="nome_1"></td>
+                    </tr>
+                        <td >Tipo</td>
+                        <td id="tipo_0"></td>
+                        <td id="tipo_1"></td>
+                    </tr>
+                    <tr >
+                        <td>Altura (mm)</td>
+                        <td id="altura_0"></td>
+                        <td id="altura_1"></td>
+                    </tr>
+                    <tr >
+                        <td >Peso (Kg)</td>
+                        <td id="peso_0"></td>
+                        <td id="peso_1"></td>
+                    </tr>
+                    <tr >
+                        <td >Evolução</td>
+                        <td id="evolução_0"></td>
+                        <td id="evolução_1"></td>
+                    </tr>
+                    </tbody>
+                    
+                </table>
+            </div>
+            <div style="text-align: center;padding-bottom: 20px;">
+                <button id="close_compare" type="button" style="height: 40px; width: 200px;">Fechar</button>
+            </div> 
+        </dialog>   
+    </main>
+    <script src="js/compare.js"></script>
+</body>
+</html>
