@@ -15,6 +15,12 @@ class Poke {
 
         this.compareBtn.onclick = () => this.ShowCompare();
         this.closeBtn.onclick = () => this.dialog.close(); // Atribuindo função ao Objeto
+
+        //document.getElementsByTagName("body")[0].style.backgroundColor = "#FDFD96";
+        //document.getElementById("compare_btn").style.backgroundColor = "#578018";
+        //document.getElementById("compare_btn").innerHTML = "Comparar os dois";
+
+
     }
 
     createItem(item, index) {
